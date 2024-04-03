@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weber Hotel&copy; | Novo Cadastro</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+
+    <div class="middle-box text-center loginscreen   animated fadeInDown">
+        <div>
+            <div>
+                <h2 class="title-name">Weber Hotel&copy;</h2>
+                <!--img alt="vw+" width="200" height="200" class="img-circle" src="img\vw.jpg" /-->
+            </div>
+            <h3>Registre-se</h3>
+            <p>Crie seu cadastro e inicie o uso do Weber Hotel&copy;&copy;</p>
+            <form class="m-t" role="form" method="post" enctype="multipart/form-data" action="enviarcadastro.php">
+                <div class="form-group">
+                    <input id="cdcodi" name="cdcodi" type="text" class="form-control" placeholder="CNPJ sem formatação" required="" autofocus="">
+                </div>
+                <div class="form-group">
+                    <input id="decodi" name="decodi" type="text" class="form-control" placeholder="Razão Social" required="">
+                </div>
+                <div class="form-group">
+                    <input id="demail" name="demail" type="email" class="form-control" placeholder="meuemail@provedor.com.br" required="">
+                </div>
+                <div class="form-group">
+                    <input id="desenh" name="desenh" type="password" class="form-control" placeholder="Senha" required="">
+                </div>
+                <div class="form-group">
+                        <div class="checkbox i-checks"><label> <input id="chktermo" value="S" name="chktermo" type="checkbox"><i></i> Li e concordo com o <a href="termo.html">termo de adesão</a></label></div>
+                </div>
+                <div class="form-group">
+                    <label class="radio-inline"><input type="radio" value="S" checked = "" readonly="" name="optradio">Hotel/Pousada</label>
+                    <!--label class="radio-inline"><input type="radio" value="N" name="optradio">Condômino</label-->
+                </div>
+
+                <button type="submit" class="btn btn-primary block full-width m-b">Cadastrar</button>
+
+                <!--p class="text-muted text-center"><small>Já possui um cadastro?</small></p-->
+                <a class="btn btn-sm btn-warning btn-block" href="index.html">Acesse se já possui cadastro</a>
+            </form>
+            <p class="m-t"> <small>Copyright Weber Hotel&copy;&copy; 2015/2016</small> </p>
+        </div>
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- iCheck -->
+    <script src="js/plugins/iCheck/icheck.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green',
+            });
+        });
+    </script>
+</body>
+
+</html>
